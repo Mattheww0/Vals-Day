@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romantic Words - Happy Valentine's Day</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="quote-page">
+    <div class="heart-bg"></div>
+    <div class="quote-container">
+      <h1 class="title">I Love You, Cello</h1>
+      <div class="quote-box">
+        <p id="romantic-quote">
+          "Love is not about how many days, months, or years you have been
+          together. Love is about how much you love each other every single
+          day."
+        </p>
+        <button class="next-quote" id="new-quote">➜</button>
+      </div>
+      <a href="index.html" class="back-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+      </a>
+    </div>
+    <div class="floating-hearts"></div>
+    <div class="love-shape" style="top: 10%; left: 5%"></div>
+    <div class="love-shape" style="bottom: 15%; right: 10%"></div>
+
+    <audio id="background-music" src="JapaneseDenim.mp3" preload="auto"></audio>
+    <button id="play-music">Sambil play ini dong</button>
+    <script>
+      document.getElementById("play-music").addEventListener("click", () => {
+        const audio = document.getElementById("background-music");
+        audio.play();
+      });
+    </script>
+    <script src="script1.js"></script>
+  </body>
+</html>
