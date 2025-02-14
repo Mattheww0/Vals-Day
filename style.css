@@ -387,16 +387,67 @@ body::before,
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 600px) {
-    header {
-        font-size: 1.2em;
-    }
-    
-    main {
-        padding: 10px;
-    }
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
 
-    footer {
-        font-size: 0.8em;
-    }
+  .circles-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .video-container {
+    width: 90%;
+    height: 60%;
+  }
+
+  .coupons {
+    grid-template-columns: 1fr;
+  }
+
+  .coupon {
+    max-width: 250px;
+  }
+
+  .quote-container {
+    padding: 1rem;
+  }
+
+  #romantic-quote {
+    font-size: 1.2rem;
+  }
+
+  .next-quote {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .video-container {
+    height: 50%;
+  }
+
+  .coupon {
+    max-width: 200px;
+  }
 }
