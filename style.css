@@ -387,3 +387,16 @@ body::before,
     font-size: 1.2rem;
   }
 }
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 1.2em;
+    }
+    
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
